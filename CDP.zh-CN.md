@@ -98,6 +98,6 @@ opencli doctor                    # 查看并验证连接是否通畅
 opencli bilibili hot --limit 5    # 执行目标命令
 ```
 
-> *Tip: 如果你填写的是一个普通 HTTP/HTTPS 的 URL 地址，OpenCLI 会自动尝试抓取该地址下的 `/json/version` 节点，来动态解析并连接真正底层依赖的 WebSocket 地址。*
+> *Tip: 如果你填写的是一个普通 HTTP/HTTPS 的 CDP 地址，OpenCLI 会自动请求 `/json` target 列表，并挑选最可能的 app/page target；如果同一个端口下暴露了多个应用 target，还可以通过 `OPENCLI_CDP_TARGET`（例如 `antigravity`、`codex`）进一步缩小匹配范围。*
 
 如果你想在此服务器上永久启用该配置，可以将对应的 `export` 语句追加进入你的 `~/.bashrc` 或 `~/.zshrc` 配置文件中。

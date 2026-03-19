@@ -39,7 +39,7 @@ Turn ANY Electron application into a CLI tool! Recombine, script, and extend app
 - **CLI All Electron** — CLI-ify apps like Antigravity Ultra! Now AI can control itself natively using cc/openclaw!
 - **Account-safe** — Reuses Chrome's logged-in state; your credentials never leave the browser.
 - **AI Agent ready** — `explore` discovers APIs, `synthesize` generates adapters, `cascade` finds auth strategies.
-- **Self-healing setup** — `opencli setup` auto-discovers tokens; `opencli doctor` diagnoses config across 10+ tools; `--fix` repairs them all.
+- **Self-healing setup** — `opencli setup` verifies Browser Bridge connectivity; `opencli doctor` diagnoses daemon, extension, and live browser connectivity.
 - **Dynamic Loader** — Simply drop `.ts` or `.yaml` adapters into the `clis/` folder for auto-registration.
 - **Dual-Engine Architecture** — Supports both YAML declarative data pipelines and robust browser runtime TypeScript injections.
 
@@ -117,7 +117,7 @@ Run `opencli list` for the live registry.
 | **discord-app** | `status` `send` `read` `channels` `servers` `search` `members` | 🖥️ Desktop |
 | **v2ex** | `hot` `latest` `topic` `daily` `me` `notifications` | 🌐 / 🔐 |
 | **xueqiu** | `feed` `hot-stock` `hot` `search` `stock` `watchlist` | 🔐 Browser |
-| **antigravity** | `status` `send` `read` `new` `evaluate` | 🖥️ Desktop |
+| **antigravity** | `status` `send` `read` `new` `dump` `extract-code` `model` `watch` | 🖥️ Desktop |
 | **chatgpt** | `status` `new` `send` `read` `ask` | 🖥️ Desktop |
 | **xiaohongshu** | `search` `notifications` `feed` `me` `user` `download` | 🔐 Browser |
 | **apple-podcasts** | `search` `episodes` `top` | 🌐 Public |

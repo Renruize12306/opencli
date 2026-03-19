@@ -1,7 +1,7 @@
 ---
 name: opencli
 description: "OpenCLI — Make any website or Electron App your CLI. Zero risk, AI-powered, reuse Chrome login. 80+ commands across 19 sites."
-version: 0.7.3
+version: 0.7.4
 author: jackwener
 tags: [cli, browser, web, chrome-extension, cdp, bilibili, zhihu, twitter, github, v2ex, hackernews, reddit, xiaohongshu, xueqiu, youtube, boss, coupang, AI, agent]
 ---
@@ -170,11 +170,9 @@ opencli list --json         # JSON output
 opencli list -f yaml        # YAML output
 opencli validate            # Validate all CLI definitions
 opencli validate bilibili   # Validate specific site
-opencli setup               # Interactive token setup (auto-discover + TUI checkbox)
-opencli doctor              # Diagnose token & extension config across all tools
+opencli setup               # Interactive Browser Bridge setup and connectivity check
+opencli doctor              # Diagnose daemon, extension, and browser connectivity
 opencli doctor --live       # Also test live browser connectivity
-opencli doctor --fix        # Fix mismatched configs (interactive confirmation)
-opencli doctor --fix -y     # Fix all configs non-interactively
 ```
 
 ### AI Agent Workflow
